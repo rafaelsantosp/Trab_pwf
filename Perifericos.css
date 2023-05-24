@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Reset */
+  * {
+    font-family: 'Montserrat', sans-serif;
+    color: #282828;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    grid-template-columns: 1fr 6fr;
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "footer footer";
+  }
+  
+  header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 250px;
+    height: 120px;
+    margin-right: 10px;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: #333;
+    
+    padding: 10px;
+  }
+  footer p {
+    color: #f2f2f2;
+  }
+  nav {
+    grid-area: nav;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      nav ul li {
+        margin-right: 10px;
+      }
+      
+      nav ul li.left-link {
+        margin-right: auto;
+        margin-left: 0;
+      }
+      
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px;
+      }
+      
+      nav ul li a:hover {
+        background-color: #333;
+        color: #fff;
+      }
+      
+  
+      main {
+          grid-area: main;
+        padding: 20px;
+      }
+  
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+      }
+  
+      .video-container iframe,
+      .video-container object,
+      .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+  
+      .perifericos-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      .teclado {
+        flex: 1;
+        padding: 1px;
+        margin-right: 1px;
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+      
+      .teclado img {
+        width: 270px;
+        height: 150px;
+        margin-right: 20px;
+      }
+  
+      .mouse {
+        flex: 1;
+        padding: 1px;
+        margin-right: 1px;
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+      
+      .mouse img {
+        width: 270px;
+        height: 150px;
+        margin-right: 20px;
+      }
+  
+      .headset {
+        flex: 1;
+        padding: 1px;
+        margin-right: 1px;
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+      .mousepad {
+        flex: 1;
+        padding: 1px;
+        margin-right: 1px;
+        background-color: #f2f2f2;
+        text-align: center;
+  
+      }
+      .mousepad img {
+        width: 270px;
+        height: 150px;
+        margin-right: 20px;
+      }
+      .caixa{
+        flex: 1;
+        padding: 1px;
+        margin-right: 1px;
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+      .caixa img{
+        width: 270px;
+        height: 150px;
+        margin-right: 20px;
+      }
+      .microfone{
+        flex: 1;
+        padding: 1px;
+        margin-right: 1px;
+        background-color: #f2f2f2;
+        text-align: center;
+      }
+      .microfone img{
+        width: 270px;
+        height: 150px;
+        margin-right: 20px;
+      }
+      .headset img {
+        width: 270px;
+        height: 150px;
+        margin-right: 20px;
+      }
+       table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+      }
+  
+      @media (max-width: 768px) {
+        
+        .logo-img {
+          max-width: 150px;
+        }
+  
+        
+        nav ul {
+          flex-direction: column;
+        }
+  
+        .left-link {
+          margin-bottom: 10px;
+        }
+  
+        .perifericos-container {
+          flex-direction: column;
+        }
+  
+  
+        
+        .video-container {
+          margin-bottom: 20px;
+        }
+        .video-container iframe {
+          border: none;
+        }
+  
+        iframe {
+          max-width: 100%;
+        }
+      }
+  
+      .container p {
+        text-align: center;
+      }
